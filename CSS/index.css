@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to left, rgb(11, 170, 72), rgb(151, 210, 224)) no-repeat;
+    background-image: url(https://ifmt.edu.br/media/filer_public_thumbnails/filer_public/25/d3/25d3fe85-cd67-454d-8b28-82f6b095e0ee/whatsapp_image_2019-11-22_at_101013.jpeg__1000x800_q80_subsampling-2_upscale.jpg);
+    background-position: center center ;
+    background-size: cover;
+    
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.418);
+    border: solid white;
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Centraliza o texto dentro do container */
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+
+button {
+    background-color: #0eb114;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto; /* Centraliza o botão na horizontal */
+    display: block; /* Ocupa toda a largura disponível */
+    animation-name: bottom;
+    animation-duration: 1s;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+/* Animação etc */
+@keyframes bottom {
+0%,
+100% {
+-webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+-webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+10% {
+-webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+20%,
+40%,
+60% {
+-webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+30%,
+50%,
+70% {
+-webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+80% {
+-webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+90% {
+-webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+}
+
